@@ -54,6 +54,11 @@ nav a {
     color: white;
 }
 
+nav a:hover {
+    text-decoration: underline;
+    color: gold;
+}
+
 main h1 {
     text-align: center;
     margin: 20px auto;
