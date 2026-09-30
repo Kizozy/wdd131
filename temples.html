@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Album - WDD 131</title>
+    <meta
+      name="description"
+      content="Responsive temple picture album page for WDD 131."
+    />
+    <meta name="author" content="Okeke Kingsley" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Temple Album</h1>
+      <button id="hamburger" aria-label="Toggle Menu">&#9776;</button>
+      <nav id="nav-menu">
+        <a href="#">Home</a>
+        <a href="#">Old</a>
+        <a href="#">New</a>
+        <a href="#">Large</a>
+        <a href="#">Small</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Home</h2>
+      <div class="grid-container">
+        <figure>
+          <img
+            src="images/aba_nigeria_temple.jpg"
+            alt="aba temple"
+          />
+          <figcaption>Aba Nigeria Temple</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/accra_ghana_temple.jpg"
+            alt="accra temple"
+          />
+          <figcaption>Accra Ghana Temple</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/salt_lake_temple.jpg"
+            alt="salt lake temple"
+          />
+          <figcaption>Salt Lake Temple</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/bern_switzerland_temple.jpg"
+            alt="bern switzerland temple"
+          />
+          <figcaption>Bern Switzerland Temple</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/tokyo_japan_temple.jpg"
+            alt="tokyo japan temple"
+          />
+          <figcaption>Tokyo Japan Temple</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/london_england_temple.jpg"
+            alt="london england temple"
+          />
+          <figcaption>London England Temple</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/rome_italy_temple.jpg"
+            alt="Rome italy temple"
+          />
+          <figcaption>Rome Italy Temple</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/johannesburg_south_africa_temple.jpg"
+            alt="johannesburg south africa temple"
+          />
+          <figcaption>Johannesburg South Africa Temple</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/kinshasa_dr_congo_temple.jpg"
+            alt="kinshasa dr congo temple"
+          />
+          <figcaption>Kinshasa DR Congo Temple</figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentyear">2025</span> 🏵 Okeke Chibueze Kingsley 🏵
+        Nigeria
+      </p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>
