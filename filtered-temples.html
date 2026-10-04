@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+    name="description"
+    content="Filtered temple picture album showcasing temples from around the world with responsive grid layouts and native lazy loading for WDD 131."
+    />
+    <meta name="author" content="Okeke Chibueze Kingsley" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" />
+    <script src="scripts/filtered-temples.js" defer></script>
+    <title>Temple Album - WDD 131</title>
+  </head>
+  <body>
+    <header>
+      <h1>Temple Album</h1>
+      <button id="hamburger" aria-label="Toggle Menu">&#9776;</button>
+      <nav id="nav-menu">
+        <a href="#" id="home" title="Home">Home</a>
+        <a href="#" id="old" title="Old Temples">Old</a>
+        <a href="#" id="new" title="New Temples">New</a>
+        <a href="#" id="large" title="Large Temples">Large</a>
+        <a href="#" id="small" title="Small Temples">Small</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Home</h2>
+      <div class="grid-container"></div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> 🏵 Okeke Chibueze Kingsley 🏵
+        Nigeria
+      </p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>
