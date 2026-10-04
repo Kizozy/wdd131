@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Place: Tokyo, Japan</title>
+    <meta name="description" content="Explore Tokyo, Japan - Data, culture, and weather details.">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lagos, Nigeria</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 700px)">
+                <img src="images/hero-small.webp" alt="Tokyo Skyline at sunset with Mount Fuji in the background" loading="lazy">
+            </picture>
+        </div>
+
+        <section class="card data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><span>Area:</span> 923,768 km²</li>
+                <li><span>Population:</span> ~240–250 Million</li>
+                <li><span>Capital:</span> Abuja</li>
+                <li><span>Languages:</span> English</li>
+                <li><span>Currency:</span> Nigerian Naira (₦)</li>
+                <li><span>Time Zone:</span> UTC+1</li>
+                <li><span>Calling Code:</span> +234</li>
+            </ul>
+        </section>
+
+        <section class="card weather-card">
+            <h2>
+                Weather
+                <img src="images/weather-icon.svg" alt="Weather Icon" class="mobile-weather-icon">
+            </h2>
+            <ul>
+                <li><span>Temperature:</span> <span id="temp">8°C</span> </li>
+                <li><span>Conditions:</span> Mostly Sunny</li>
+                <li><span>Wind:</span> <span id="wind">12km/h</span> </li>
+                <li><span>Wind Chill:</span> <span id="chill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Okeke Kingsley | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

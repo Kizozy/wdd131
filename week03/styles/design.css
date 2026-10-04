@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    color: #333333;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    text-align: left;
+    grid-column: 1 / -1; 
+}
+
+div.callout {
+    padding: 1rem; 
+    background-color: #f4f4f4;
+    color: #222222;
+    border-left: 5px solid #702963;
+    margin: 1rem 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.banner {
+    background-color: #702963;
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: left;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
