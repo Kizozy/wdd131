@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review Form | WDD 131</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Product Review</h1>
+    </header>
+
+    <main>
+      <form method="get" action="review.html">
+        <label for="product-select"
+          >Product Name <span class="required">*</span></label
+        >
+        <select id="product-select" name="product-name" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <fieldset class="rating-fieldset">
+          <legend>Overall Rating <span class="required">*</span></legend>
+          <div class="stars">
+            <input type="radio" id="star1" name="rating" value="1" required />
+            <label for="star1">☆</label>
+            <input type="radio" id="star2" name="rating" value="2" required />
+            <label for="star2">☆</label>
+            <input type="radio" id="star3" name="rating" value="3" required />
+            <label for="star3">☆</label>
+            <input type="radio" id="star4" name="rating" value="4" required />
+            <label for="star4">☆</label>
+            <input type="radio" id="star5" name="rating" value="5" required />
+            <label for="star5">☆</label>
+          </div>
+        </fieldset>
+
+        <label for="install-date"
+          >Date of Installation <span class="required">*</span></label
+        >
+        <input type="date" id="install-date" name="install-date" required />
+
+        <fieldset>
+          <legend>
+            Which features did you find useful? (Check all that apply)
+          </legend>
+          <label
+            ><input
+              type="checkbox"
+              id="feature-durability"
+              name="features"
+              value="durability"
+            />
+            Durability</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="feature-ease"
+              name="features"
+              value="ease-of-use"
+            />
+            Ease of Use</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="feature-performance"
+              name="features"
+              value="performance"
+            />
+            Performance</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="feature-design"
+              name="features"
+              value="design"
+            />
+            Design</label
+          >
+        </fieldset>
+
+        <label for="review-text">Written Review (Optional)</label>
+        <textarea id="review-text" name="review" rows="4"></textarea>
+
+        <label for="user-name">Your Name (Optional)</label>
+        <input type="text" id="user-name" name="user-name" />
+
+        <input type="submit" value="Post Review" />
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> | Product Review Form</p>
+    </footer>
+  </body>
+</html>
