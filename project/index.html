@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ba3Service.org - Battery as a Service for EV Tricycles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ba3Service<span>.org</span></h1>
+        </div>
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#stations">Find a Station</a></li>
+                <li><a href="batteries.html">Our Batteries</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Sustainable Power for EV Tricycles</h2>
+                <p>Say goodbye to high upfront costs and battery degradation. Access reliable charging, instant swaps, and maintenance through our subscription plans.</p>
+                <a href="#stations" class="btn-primary">Find a Swap Station</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="card">
+                <h3>⚡ Fast Charge & Swap</h3>
+                <p>Wondering <strong>where you can find a charge and swap station near your location?</strong> Our network spans key urban transit routes to get you back on the road in minutes.</p>
+            </div>
+            <div class="card">
+                <h3>🔋 Smart Battery Tech</h3>
+                <p>Curious about <strong>what type of batteries we charge and/or swap?</strong> We provide high-performance lithium-ion packs tailored specifically for EV tricycles with built-in safety diagnostics.</p>
+            </div>
+        </section>
+
+        <section id="stations" class="station-finder">
+            <h2>Locate a Nearby Station</h2>
+            <p>Enter your current neighborhood or route to find live swap availability.</p>
+            <div class="search-box">
+                <input type="text" id="location-input" placeholder="e.g., Central Station Hub...">
+                <button id="search-btn" class="btn-primary">Search</button>
+            </div>
+            <div id="search-results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Ba3Service.org | Okeke Kingsley | WDD 131 Project</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

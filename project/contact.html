@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ba3Service.org</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ba3Service<span>.org</span></h1>
+        </div>
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="batteries.html">Our Batteries</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="station-finder">
+        <h2>Get in Touch with Our Team</h2>
+        <p>Have questions about swapping stations or fleet partnerships? Send us a message.</p>
+        
+        <form id="contact-form" style="max-width: 500px; margin: 0 auto; text-align: left; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <div style="margin-bottom: 1rem;">
+                <label for="form-name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Your Name:</label>
+                <input type="text" id="form-name" required style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+            <div style="margin-bottom: 1rem;">
+                <label for="form-email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email Address:</label>
+                <input type="email" id="form-email" required style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+            <div style="margin-bottom: 1rem;">
+                <label for="form-subject" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Subject / Inquiry Type:</label>
+                <input type="text" id="form-subject" required style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%;">Submit Message</button>
+        </form>
+        <div id="submission-feedback" style="margin-top: 1.5rem; font-weight: 500; color: var(--primary-color);"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Ba3Service.org | Okeke Kingsley | <a href="references.html" style="color:white;">References</a></p>
+    </footer>
+    <script src="script/script.js" defer></script>
+</body>
+</html>
